@@ -19,23 +19,67 @@ header{
     display: flex;
     justify-content: space-between;
     padding-left: 15%;
+    padding-right: 15%;
 }
 .title{
     height: 100%;
-    background-color: red;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-size: 3em;
-    width: fit-content
+    width: fit-content;
+    letter-spacing: 3px;
+}
+.title span{
+    color: lightblue;
+    margin-left: 8px;
 }
 .content{
     height: 100%;
-    background-color: green;
-    width: 30%;
+    width: fit-content;
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+}
+.option{
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: 3px;
+    transform: 1.2s;
+}
+.option:hover{
+    color: lightblue;
 }
 .icons{
     height: 100%;
-    background-color: blue;
+    /* background-color: blue; */
     width: 15%;
+    display: flex;
+    align-items: center;
+}
+.fa {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    width: fit-content;
+    height: fit-content;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #55ACEE;
+    color: white;
+}
+.fa-twitter {
+    background: white;
+    color: #55ACEE;
+    font-size: 20px;
 }
