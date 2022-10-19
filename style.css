@@ -20,6 +20,9 @@ header{
     justify-content: space-between;
     padding-left: 15%;
     padding-right: 15%;
+    position: absolute;
+    z-index: 9;
+    background-color: white;
 }
 .title{
     height: 100%;
@@ -64,7 +67,7 @@ header{
 
 .icons i {
     margin-left: 15px;
-        transition: 1.1s;
+    transition: 1.1s;
 }
 .icons i:hover {
     color: lightblue;
@@ -72,6 +75,27 @@ header{
 }
 .icons :last-child{
     display: none;
+}
+.content2{
+    width: 100%;
+    height: fit-content;
+    font-size: 1.8em;
+    box-shadow: 5px 10px #f7f3f3;
+    transform:translate(0px,-130px);
+    z-index: 1;
+    transition: all 0.35s linear;
+    display: none;
+}
+.option2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    transition: 0.8s;
+}
+.option2:hover{
+    padding-left: 20px;
+    background-color: hsl(205, 78%, 60%);
+    color:lightblue
 }
 @media only screen and (max-width:800px){
     
@@ -86,6 +110,9 @@ header{
     }
     .content{
         display: none;
+    }
+    .content2{
+        display: block;
     }
     .icons i{
         display: none;
