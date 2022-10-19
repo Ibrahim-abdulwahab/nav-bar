@@ -70,3 +70,33 @@ header{
     color: lightblue;
     cursor: pointer;
 }
+.icons :last-child{
+    display: none;
+}
+@media only screen and (max-width:800px){
+    
+    header{
+        width: 100%;
+        height:10%;
+        box-shadow: 0px 0px #f7f3f3;
+        display: flex;
+        justify-content: space-between;
+         padding-left: 15px;
+        padding-right: 15px;
+    }
+    .content{
+        display: none;
+    }
+    .icons i{
+        display: none;
+    }
+    .icons :last-child{
+        display: block;
+        font-size: 1.7em;
+        transition: 0.5s;
+    }
+    .icons :last-child:hover{
+        color: black;
+        transform: rotate(90deg);
+    }
+}
