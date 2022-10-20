@@ -86,6 +86,9 @@ header{
     transition: all 0.35s linear;
     display: none;
 }
+.show{
+    transform: translate(0px,70px);
+}
 .option2{
     padding-top: 15px;
     padding-bottom: 15px;
